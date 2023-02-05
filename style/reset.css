@@ -13,3 +13,42 @@
     text-size-adjust: 50pt;
     color: white;
 }
+
+#search-input {
+    width: 300px;
+}
+
+.search-btn {
+    width: 300px;
+}
+
+.countrybtn {
+    margin-bottom: 12px !important;
+    width: 300px;
+    color: black !important;
+    background-color: lightgray !important;
+    border-color: lightgrey !important;
+}
+
+.todaytemp {
+    /* justify-content: flex-end !important; */
+    margin-top: 0.75rem;
+    height: fit-content;
+    padding-left: 15px;
+}
+
+.right-block {
+    padding-left: 0;
+}
+
+.hr {
+    display: inline-block;
+}
+
+.hr:after {
+    content: '';
+    display: block;
+    border-top: 1px solid gray;
+    margin-top: 0.5em;
+    margin-bottom: 0.5rem;
+}
