@@ -11,7 +11,7 @@
   <title>Weather Dashboard</title>
 </head>
 
-<body>
+<body onload="dispalyCityButton()">
   <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
     <nav class="navbar navbar-dark bg-custom-2">
       <h1>Weather Dashboard</h1>
@@ -30,11 +30,8 @@
           <div class="input-group">
             <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
               aria-labelledby="form-heading" aria-controls="today forecast" />
+
             <div class="input-group-append">
-              <!-- <button type="button" class="btn btn-primary">Search</button> -->
-              <!-- <button type="submit" class="btn search-button" id="search-button" aria-label="submit search"
-                  onclick="myFunction()">Search
-                </button> -->
               <hr class="hr weather-hr" />
             </div>
           </div>
@@ -43,35 +40,7 @@
         <div class="hr">
           <button type="button" class="btn btn-primary search-btn">Search</button>
         </div>
-        <div class="citybtn">
-          <div>
-            <button type="button" class="btn btn-primary countrybtn ">Berlin</button>
-          </div>
-
-          <div>
-            <button type="button" class="btn btn-primary countrybtn ">Paris</button>
-          </div>
-
-          <div>
-            <button type="button" class="btn btn-primary countrybtn ">Edinburgh</button>
-          </div>
-
-          <div>
-            <button type="button" class="btn btn-primary countrybtn ">Madrid</button>
-          </div>
-
-          <div>
-            <button type="button" class="btn btn-primary countrybtn ">Birmingham</button>
-          </div>
-
-          <div>
-            <button type="button" class="btn btn-primary countrybtn ">London</button>
-          </div>
-
-          <div>
-            <button type="button" class="btn btn-primary countrybtn ">Hong Kong</button>
-          </div>
-
+        <div id="citybtn" class="citybtn">
           <div class="list-group" id="history"></div>
         </div>
       </div>
