@@ -52,3 +52,9 @@
     margin-top: 0.5em;
     margin-bottom: 0.5rem;
 }
+
+.city-name {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 1rem;
+}
