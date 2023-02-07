@@ -38,7 +38,7 @@ $(document).ready(function () {
         // get currect weather
         getWeather(city).then(function (weather) {
             console.log(weather);
-            $(".todaytemp").removeAttr('hidden');
+            $("#data-container").removeAttr('hidden');
             let html = "";
             html += "<p class='city-name'>" + weather.name + " (" + moment().format('d/M/yyyy') + ") </p>";
             html += "<p> Temp: " + weather.main.temp + "°C";
@@ -51,10 +51,24 @@ $(document).ready(function () {
         });
 
         // get 5-days forecast
-        getForecast(city).then(function (forecast) {
-            console.log(forecast);
-            
+        getForecast(city).then(function (forecasts) {
+            console.log(forecasts);
+            let html = "";
+            html += "<div><p>5-Day Forecast:</p></div>";
+            html += "<div class='row'>"
+            forecasts.list.forEach((forecast) => {
+                if (forecast.dt_txt.split(" ")[1] == "00:00:00") {
+                    html += "<div class='col-2 border border-dark forecast-container'>";
+                    html += "<p>" + forecast.dt_txt.split(" ")[0] + "</p>";
+                    
+                    html += "</div>";
+                }
+            });
+            html += "</div>"
+            $('#forecast').html(html);
         });
     });
 });
+
+
 

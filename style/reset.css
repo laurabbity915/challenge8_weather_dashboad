@@ -37,6 +37,18 @@
     padding-left: 15px;
 }
 
+.forecast {
+    padding-left: 15px;
+}
+
+.forecast p {
+    font-weight: bold;
+}
+
+.forecast-container {
+    
+}
+
 .right-block {
     padding-left: 0;
 }
