@@ -31,9 +31,10 @@ $(document).ready(function () {
         getWeather(city).then(function (weather) {
             console.log(weather);
             
-        // }).fail(function (error) {
-        //     console.error(error);
-        //     $('#weather-data').html('City not found');
+        }).fail(function (error) {
+            console.error(error);
+            $('#weather-data').html('City not found');
         });
     });
 });
+
