@@ -41,12 +41,19 @@
     padding-left: 15px;
 }
 
-.forecast p {
+.forecast-header {
     font-weight: bold;
 }
 
 .forecast-container {
-    
+    background-color: #2024a4;
+    color: white;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.forecast-container .forecast-date {
+    font-weight: bold;
 }
 
 .right-block {
