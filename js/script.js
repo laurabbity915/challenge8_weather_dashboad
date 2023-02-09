@@ -72,6 +72,10 @@ function fetchData(city) {
     });
 }
 
+function getRecipe(recipe){
+
+}
+
 $(document).ready(function () {
     $('#search-btn').click(function () {
         const city = $('#search-input').val();
