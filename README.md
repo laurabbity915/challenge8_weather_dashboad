@@ -8,4 +8,4 @@ Deployed link: https://laurabbity915.github.io/challenge8_weather_dashboad/
 
 GitHub link: https://github.com/laurabbity915/challenge8_weather_dashboad
 
-[!kiku]
+![Kiku](./assets/Screenshot%202023-02-10%20at%203.18.58%20PM.png)
